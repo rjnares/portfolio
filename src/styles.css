@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 
 section {
@@ -25,22 +26,27 @@ ul {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
-  width: 500px;
-  font-size: 30px;
+  font-size: 1.75rem;
+  padding: 0;
 }
 
 li {
   text-decoration: none;
+  margin-right: 30px;
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 6rem;
   margin: 0;
+}
+
+h2 {
+  font-size: 50px;
 }
 
 p {
   margin: 0;
-  font-size: 30px;
+  font-size: 2.25rem;
   font-weight: 300;
 }
 
@@ -62,15 +68,18 @@ footer {
 }
 
 .button {
-  width: 200px;
-  height: 55px;
+  width: 20vw;
+  height: 10vh;
   border-radius: 30px;
   background-color: coral;
   text-align: center;
-  font-size: 30px;
+  font-size: 2.25rem;
   font-weight: 300;
-  padding-top: 5px;
   margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover {
@@ -88,9 +97,73 @@ footer {
 
 .logo {
   height: 100px;
-  margin: 30px;
+  margin: 25px;
 }
 
 .social {
   margin: 20px;
+}
+
+.sub-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.information {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    font-size: 1.25rem;
+    margin-right: 10px;
+  }
+  li {
+    text-align: left;
+    margin: 0;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .hero-text {
+    margin-left: 10px;
+    margin-bottom: 200px;
+  }
+  .social {
+    margin: 10px;
+  }
+  .social svg {
+    width: 40px;
+  }
+  .logo {
+    height: 70px;
+    margin: 10px;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .button {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    padding: 5px;
+    height: 8vh;
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .button {
+    font-size: 2rem;
+    margin-top: 20px;
+    padding: 5px;
+    height: 10vh;
+    width: 25vw;
+  }
+  ul {
+    flex-direction: column;
+    font-size: 1.25rem;
+    margin-right: 10px;
+  }
 }
