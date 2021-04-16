@@ -7,7 +7,6 @@ body {
 section {
   height: 500px;
   background-color: white;
-  border: solid black 1px;
 }
 
 .hero {
@@ -112,6 +111,44 @@ footer {
 
 .information {
   text-align: center;
+}
+
+.project-card {
+  width: 400px;
+  height: 300px;
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sub-section-alt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px;
+}
+
+.subtext {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.project-image {
+  width: 250px;
+  margin-top: 25px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #ef744b;
 }
 
 @media only screen and (max-width: 650px) {
