@@ -1,19 +1,24 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  box-sizing: border-box;
 }
 
 section {
-  height: 500px;
   background-color: white;
 }
 
 .hero {
-  height: 100vh;
   background-color: #1c1d25;
+  height: 100vh;
   color: white;
   font-size: 40px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px;
 }
 
 nav {
@@ -24,28 +29,32 @@ nav {
 ul {
   display: flex;
   list-style-type: none;
+  width: 500px;
   justify-content: space-around;
-  font-size: 1.75rem;
-  padding: 0;
+  font-size: 30px;
 }
 
 li {
   text-decoration: none;
-  margin-right: 30px;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 90px;
   margin: 0;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 50px;
 }
 
 p {
   margin: 0;
-  font-size: 2.25rem;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.subtext {
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -56,29 +65,21 @@ p {
   align-items: center;
 }
 
-footer {
-  height: 500px;
-  background-color: black;
-}
-
 .hero-text {
   margin-left: 80px;
   margin-bottom: 200px;
 }
 
 .button {
-  width: 20vw;
-  height: 10vh;
+  width: 200px;
+  height: 55px;
   border-radius: 30px;
   background-color: coral;
   text-align: center;
-  font-size: 2.25rem;
+  font-size: 30px;
   font-weight: 300;
+  padding-top: 5px;
   margin-top: 20px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .button:hover {
@@ -95,50 +96,60 @@ footer {
 }
 
 .logo {
-  height: 100px;
-  margin: 25px;
+  height: 80px;
+  margin: 30px;
 }
-
 .social {
   margin: 20px;
 }
 
 .sub-section {
   display: flex;
-  justify-content: center;
-  padding: 60px;
+  justify-content: space-around;
+  padding: 80px;
 }
 
-.information {
+.sub-section-alternative {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  padding: 80px;
+}
+
+.headshot {
+  width: 300px;
+  border-radius: 150px;
+  margin-left: 80px;
+}
+
+.headshot-container {
+  display: flex;
+  align-items: center;
 }
 
 .project-card {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 500px;
   box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  margin: 10px;
 }
 
-.projects-container {
+.project-container {
   display: flex;
   justify-content: space-around;
 }
 
-.sub-section-alt {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 60px;
-}
-
-.subtext {
-  font-size: 15px;
-  font-weight: 300;
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .project-image {
-  width: 250px;
   margin-top: 25px;
+  width: 250px;
+  border-radius: 125px;
 }
 
 hr {
@@ -151,58 +162,47 @@ hr {
   color: #ef744b;
 }
 
-@media only screen and (max-width: 650px) {
-  ul {
-    flex-direction: column;
-    font-size: 1.25rem;
-    margin-right: 10px;
-  }
-  li {
-    text-align: left;
-    margin: 0;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  .hero-text {
-    margin-left: 10px;
-    margin-bottom: 200px;
-  }
-  .social {
-    margin: 10px;
-  }
-  .social svg {
-    width: 40px;
-  }
-  .logo {
-    height: 70px;
-    margin: 10px;
-  }
-  p {
-    font-size: 1.5rem;
-  }
-  .button {
-    font-size: 1.25rem;
-    margin-top: 10px;
-    padding: 5px;
-    height: 8vh;
-    width: 35vw;
-  }
-  h2 {
-    font-size: 2rem;
-  }
+a {
+  text-decoration: none;
+  color: white;
 }
 
-@media only screen and (min-width: 650px) and (max-width: 1024px) {
-  .button {
-    font-size: 2rem;
-    margin-top: 20px;
-    padding: 5px;
-    height: 10vh;
-    width: 25vw;
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
   }
+
   ul {
-    font-size: 1.5rem;
-    margin-right: 10px;
+    display: none;
+    background-color: #2b2c38;
+    margin: 0;
+  }
+
+  ul.show {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #2b2c38;
+  }
+
+  .logo {
+    display: none;
   }
 }
