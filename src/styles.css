@@ -41,7 +41,7 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 p {
@@ -150,6 +150,9 @@ footer {
     padding: 5px;
     height: 8vh;
     width: 35vw;
+  }
+  h2 {
+    font-size: 2rem;
   }
 }
 
