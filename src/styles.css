@@ -20,7 +20,6 @@ section {
   background-color: #1c1d25;
   height: 100vh;
   color: white;
-  font-size: 40px;
 }
 
 footer {
@@ -40,7 +39,7 @@ ul {
   list-style-type: none;
   width: 500px;
   justify-content: space-around;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 li {
@@ -48,17 +47,17 @@ li {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 5.75rem;
   margin: 0;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 3.25rem;
 }
 
 p {
   margin: 0;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -86,12 +85,12 @@ h3 {
 }
 
 .button {
-  width: 200px;
-  height: 55px;
+  width: 225px;
+  height: 60px;
   border-radius: 30px;
   background-color: coral;
   text-align: center;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 300;
   padding-top: 5px;
   margin-top: 20px;
@@ -152,7 +151,7 @@ h3 {
 }
 
 .project-image {
-  width: 40vw;
+  width: 100%;
 }
 
 hr {
@@ -263,7 +262,10 @@ a {
   .project-image {
     width: 100vw;
   }
-  #contact-me {
-    display: none;
+  footer {
+    padding: 10px;
+  }
+  footer > p {
+    font-size: 1.25rem;
   }
 }
