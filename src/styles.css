@@ -248,7 +248,13 @@ a {
     display: flex;
     padding: 0;
   }
-  .sub-section,
+  .sub-section {
+    padding: 10px;
+  }
+  h2 {
+    font-size: 2.25rem;
+    text-align: center;
+  }
   .sub-section-alternative,
   #contact-me {
     display: none;
