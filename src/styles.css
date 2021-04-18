@@ -109,6 +109,10 @@ h3 {
   padding-bottom: 200px;
 }
 
+.socials > div {
+  margin-bottom: 50px;
+}
+
 .logo {
   height: 80px;
   margin: 30px;
