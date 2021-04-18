@@ -192,6 +192,11 @@ a {
   margin-right: 10px;
 }
 
+.project-links {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media only screen and (max-width: 1024px) {
   .hamburger {
     display: block;
